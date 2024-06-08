@@ -28,9 +28,11 @@ public class CrudDbUpdate {
         student.setCell(studentList.get(0).getCell());
         student.setId(studentList.get(0).getId());
 
-//        saveDate();
+        saveDate();
+        deleteData(1);
         editData(student);
         showData();
+        
 
     }
 
@@ -141,6 +143,26 @@ public class CrudDbUpdate {
         }
 
         return studentList;
+    }
+    
+    public static void deleteData(int id){
+        
+        String sql = "delete from student where id = ?";
+        
+        try {
+            ps = db.getCon().prepareStatement(sql);
+            ps.setInt(1, id);
+            
+            ps.executeUpdate();
+            
+            ps.close();
+            db.getCon().close();
+            System.out.println("Data Deleted");
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(CrudDbUpdate.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }
