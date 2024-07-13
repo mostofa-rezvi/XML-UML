@@ -1,0 +1,46 @@
+
+World Traveller 
+ - customers: Customer[]         
+ - consultants: Consultant[]     
+
+Customer
+ - customerId
+ - name 
+ - address
+ - phone
+ - email
+ - bookings           
+ - paymentMethod 
+
+Consultant
+ - consultantId
+ - name
+ - assignedCustomers
+
+Booking
+ - bookingId
+ - bookingDate
+ - details
+ - status
+
+Itinerary
+ - itineraryId
+ - customer
+ - details
+
+Requirements
+ - flightTimetables
+ - hotelLocations
+ - holidayAgencies
+
+Alternative
+ - alternativeId
+ - details
+
+PaymentMethod
+ - methodId
+ - type
+
+Money
+ - amount
+ - currency

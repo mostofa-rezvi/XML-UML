@@ -1,0 +1,15 @@
+CON
+Registration
+Itinerary
+Bookings
+Alternatives
+PaymentMethods
+Insurance(Car)
+
+
+CUS
+Requirements
+Bookings
+Payment
+Insurance(Car)
+

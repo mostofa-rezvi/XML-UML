@@ -1,0 +1,13 @@
+World Traveller
+
+ - Register Customer
+ - Create Itinerary
+ - Match Requirements
+ - Advise Alternatives
+ - Insurance (Car)
+ - Print Itinerary
+ - Bill Customer
+ - Receive Payment
+ - Confirm Booking
+ - Provide Receipt 
+ - End
